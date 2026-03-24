@@ -1,12 +1,72 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Proyecto DevOps</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio DevOps</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
+        }
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .emoji {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .date {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #999;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hola mundo desde AWS 🚀</h1>
-  <p>Segundo cambio 🚀</p>
+    <div class="container">
+        <div class="emoji">🚀</div>
+        <h1>¡Hola desde AWS!</h1>
+        <p>Este sitio está alojado en <strong>Amazon S3</strong> con hosting estático.</p>
+        <p>Actualmente estoy aprendiendo <strong>DevOps</strong> y automatización con AWS.</p>
+        <div class="badge">🌐 Sitio en producción</div>
+        <div class="date" id="fecha"></div>
+    </div>
+    <script>
+        document.getElementById('fecha').innerHTML = '📅 Actualizado: ' + new Date().toLocaleString('es-MX');
+    </script>
 </body>
 </html>
-
