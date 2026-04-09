@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Instalando..."
+
+  build:
+    commands:
+      - echo "Construyendo proyecto..."
+
+  post_build:
+    commands:
+      - echo "Build terminado"
